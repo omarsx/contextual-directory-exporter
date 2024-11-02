@@ -39,7 +39,7 @@ A powerful and flexible Bash script designed to export directory structures to J
 
 ### Installing Dependencies
 
-#### Bash 5 (for macOS users)**
+#### Bash 5 (for macOS users)
 
 Install via Homebrew: 
 ```brew install bash```
@@ -58,6 +58,7 @@ Install via Homebrew:
 Verify installations:
 
 ```tree --version```
+
 ```jq --version```
 
 ### Installation
@@ -65,6 +66,7 @@ Verify installations:
  1. **Clone the Repository**
 
 ```git clone <https://github.com/omarsx/contextual-directory-exporter.git>```
+
 ```cd contextual-directory-exporter```
 
  2. **Make the Script Executable**
@@ -123,22 +125,24 @@ The generated JSON file includes:
 
 ### Example Metadata Section
 
-```"metadata": {```
-```  "generation_timestamp": "2024-11-02T21:14:28.300Z",```
-```  "source_directory": "/Users/omar/Projects/my_project",```
- ``` "target_directory": "/Users/omar/Desktop/directory_exports",```
- ``` "output_filename": "directory_export_Nov_03__02-14-AM_PKT.json",```
- ``` "skipped_directories": [```
-```    {```
- ```     "name": "node_modules",```
-```      "skipped_file_count": 12345```
-```    },```
-```    {```
-```      "name": ".git",```
-```      "skipped_file_count": 250```
-```    }```
-```  ]```
-}```
+```
+"metadata": {
+  "generation_timestamp": "2024-11-02T21:14:28.300Z",
+  "source_directory": "/Users/omar/Projects/my_project",
+  "target_directory": "/Users/omar/Desktop/directory_exports",
+  "output_filename": "directory_export_Nov_03__02-14-AM_PKT.json",
+  "skipped_directories": [
+    {
+      "name": "node_modules",
+      "skipped_file_count": 12345
+    },
+    {
+      "name": ".git",
+      "skipped_file_count": 250
+    }
+  ]
+}
+```
 
 ### License
 
