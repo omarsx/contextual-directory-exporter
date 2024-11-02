@@ -41,39 +41,35 @@ A powerful and flexible Bash script designed to export directory structures to J
 
 #### Bash 5 (for macOS users)**
 
-Install via Homebrew:
-
-brew install bash
+Install via Homebrew: 
+```brew install bash```
 
 Verify installation:
-
-bash --version
+```bash --version```
 
 Ensure that Bash 5 is used when running the script:
-
-/usr/local/bin/bash script.sh
+```/usr/local/bin/bash script.sh```
 
 #### tree and jq
 
 Install via Homebrew:
-
-brew install tree jq
+```brew install tree jq```
 
 Verify installations:
 
-tree --version
-jq --version
+```tree --version```
+```jq --version```
 
 ### Installation
 
  1. **Clone the Repository**
 
-git clone <https://github.com/omarsx/contextual-directory-exporter.git>
-cd contextual-directory-exporter
+```git clone <https://github.com/omarsx/contextual-directory-exporter.git>```
+```cd contextual-directory-exporter```
 
  2. **Make the Script Executable**
 
-chmod +x script.sh
+```chmod +x script.sh```
 
 ### Usage
 
@@ -81,11 +77,11 @@ chmod +x script.sh
 
 * If Bash 5 is not your default shell, run:
 
-/usr/local/bin/bash script.sh
+```/usr/local/bin/bash script.sh```
 
 * If Bash 5 is your default shell, run:
 
-./script.sh
+```./script.sh```
 
  2. **Follow the Interactive Prompts**
 
@@ -98,18 +94,18 @@ chmod +x script.sh
 * The script will generate the directory structure, analyze skipped directories, and combine data into a final JSON file.
 * Upon success, you will see a message:
 
-✅ Success! This script was developed by <https://github.com/omarsx>. Please consider a star!
+```✅ Success! This script was developed by <https://github.com/omarsx>. Please consider a star!```
 
  4. **View the Output**
 
 * Navigate to the target directory you specified.
 * The output JSON file will be named in the format:
 
-directory_export_<Month>_<Day>__<Hour>-<Minute>-<AM/PM>_PKT.json
+```directory_export_<Month>_<Day>__<Hour>-<Minute>-<AM/PM>_PKT.json```
 
 Example:
 
-directory_export_Nov_03__02-14-AM_PKT.json
+```directory_export_Nov_03__02-14-AM_PKT.json```
 
 ### Sample Output
 
@@ -127,22 +123,22 @@ The generated JSON file includes:
 
 ### Example Metadata Section
 
-"metadata": {
-  "generation_timestamp": "2024-11-02T21:14:28.300Z",
-  "source_directory": "/Users/omar/Projects/my_project",
-  "target_directory": "/Users/omar/Desktop/directory_exports",
-  "output_filename": "directory_export_Nov_03__02-14-AM_PKT.json",
-  "skipped_directories": [
-    {
-      "name": "node_modules",
-      "skipped_file_count": 12345
-    },
-    {
-      "name": ".git",
-      "skipped_file_count": 250
-    }
-  ]
-}
+```"metadata": {```
+```  "generation_timestamp": "2024-11-02T21:14:28.300Z",```
+```  "source_directory": "/Users/omar/Projects/my_project",```
+ ``` "target_directory": "/Users/omar/Desktop/directory_exports",```
+ ``` "output_filename": "directory_export_Nov_03__02-14-AM_PKT.json",```
+ ``` "skipped_directories": [```
+```    {```
+ ```     "name": "node_modules",```
+```      "skipped_file_count": 12345```
+```    },```
+```    {```
+```      "name": ".git",```
+```      "skipped_file_count": 250```
+```    }```
+```  ]```
+}```
 
 ### License
 
