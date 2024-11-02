@@ -125,6 +125,3 @@ fi
 
 # Clean up temporary file
 rm /tmp/dir_structure.json
-
-# Success message
-echo -e "\n✅ Success! This script was developed by omarsx. Please consider a star!"
